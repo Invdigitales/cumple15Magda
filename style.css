@@ -128,22 +128,109 @@
       height: 40px;
       width: 40px;
       border-radius: 50%;
-      color: #ffffff;
+      color: #757575;
       font-size: 15px;
       font-weight: bold;
       background: #cad4e3;
       
     }
-    .preparate {
-      font-family: 'Julius Sans One', sans-serif; ;
-      font-size: 20px;
-      font-weight: bold;
-      color: #ffffff;
-      text-align: center;
+    .spinner {
+      height: 40px;
+      width: max-content;
+      font-size: 18px;
+      font-weight: 600;
+      font-family: monospace;
+      letter-spacing: 5px;
+      color: #8897AD;
+      filter: drop-shadow(0 0 10px);
+      display: flex;
+      margin-left: 19%;
+      justify-content: center;
+      align-items: center;
       margin-top: 10%;
-      background: #8897AD;
-  
-    }
+      
+     }
+     
+     .spinner span {
+      animation: loading6454 1.75s ease infinite;
+     }
+     
+     .spinner span:nth-child(2) {
+      animation-delay: 0.25s;
+     }
+     
+     .spinner span:nth-child(3) {
+      animation-delay: 0.5s;
+     }
+     
+     .spinner span:nth-child(4) {
+      animation-delay: 0.75s;
+     }
+     
+     .spinner span:nth-child(5) {
+      animation-delay: 1s;
+     }
+     
+     .spinner span:nth-child(6) {
+      animation-delay: 1.25s;
+     }
+     
+     .spinner span:nth-child(7) {
+      animation-delay: 1.5s;
+     }
+     
+     @keyframes loading6454 {
+      0%, 100% {
+       transform: translateY(0);
+      }
+     
+      50% {
+       transform: translateY(-10px);
+      }
+     }
+     .ping {
+      
+      margin-left: 72%;
+      --uib-size: 50px;
+      --uib-speed: 1s;
+      --uib-color: #ffffffc6;
+      position: relative;
+      height: var(--uib-size);
+      width: var(--uib-size);
+     }
+     
+     .ping::before,
+     .ping::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 80%;
+      margin-top: 120%;
+      width: 80%;
+      border-radius: 50%;
+      background-color: var(--uib-color);
+      animation: pulse7132 var(--uib-speed) linear infinite;
+      transform: scale(0);
+      opacity: 0;
+     }
+     
+     .ping::after {
+      animation-delay: calc(var(--uib-speed) / -2);
+     }
+     
+     @keyframes pulse7132 {
+      0% {
+       transform: scale(0);
+       opacity: 1;
+      }
+     
+      100% {
+       transform: scale(1);
+       opacity: 0;
+      }
+     }
+     
     .magda3{
       margin-top: -27%;
     }
@@ -262,7 +349,7 @@
   }
   .card-text{
     text-align: center;
-    color: #ffffff;
+    color: #757575;
     font-size: 15px;
     font-family: 'Julius Sans One', sans-serif;
     font-weight: bold;
@@ -278,6 +365,7 @@
   background-size: 100%;
   margin-top: -25%;
 }
+
 
 .css-button-sliding{
   margin-left: 25%;
@@ -329,7 +417,7 @@ main{
 }
 .launo{
   width: 45%;
-  margin-left: 1%;
+  margin-left: 2%;
   margin-top: 1%;
   
 
@@ -435,6 +523,8 @@ main{
     color: #f2eeee;
   }
   
-   }
+ 
+}
+   
    
   
